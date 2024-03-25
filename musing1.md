@@ -1,6 +1,4 @@
     
-    
-    $$
     You encounter a grammar production like expr -> expr / 2. If you know the type of 'expr' is guaranteed to be an unsigned integer, suggest a parser-level optimization. 
 
 
@@ -8,7 +6,7 @@
 
 
      A simple loop has a multiplication by a constant within it. The target architecture allows multiplications by powers of 2 to be done with shifts. Calculate how many assembly instructions you save by applying this optimization if the constant is 16.
-    $$
+
 ```c
 
 

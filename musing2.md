@@ -1,6 +1,7 @@
 A dead variable
 
 
+```python
 def example():
     x = 5  # x is initialized
     x = x + 2  # x is modified
@@ -8,9 +9,11 @@ def example():
     print(x)  # x is referenced
 
 example()
+```
 
 Dead Code
 
+```python
 def example():
     x = 5
     if x > 10:  # This condition is never true
@@ -21,8 +24,10 @@ def example():
 
 example()
 
+```
 
 Dead code elimination and constant propagation 
+```python
 
 def example():
     x = 5
@@ -35,10 +40,12 @@ def example():
     return y
 
 example()
+```
 
 
 It's always safe to eliminate dead assignments
 
+```python
 def example():
     x = 5
     y = x * 2
@@ -53,11 +60,13 @@ def complex_function():
 
 example()
 
+```
 
 
 Basic Building Blocks 
 
 
+```python
 def example():
     x = 5
     y = x * 2
@@ -74,20 +83,24 @@ def example(a):
     print(y)
     return y
 
+```
 
 
+```c++
 int main() {
     volatile int i = 10; // 'volatile' keyword is used
     i = i + 10;
     printf("%d\n", i);
     return 0;
 }
+```
 volatile keyword tells the compiler not to optimize the line i = i + 10;. Without volatile, the compiler might optimize this line by directly assigning the value 20 to i
 
 
 
 A compiler might use a symbol table to track the values of variables during peephole optimization.
 
+```python
 # Before optimization
 x = 2 * 3
 y = x + 5
@@ -106,10 +119,12 @@ z = 11 / 5
 print(z)
 
 
+```
 
 
 
 These optimizations often work on an Abstract Syntax Tree (AST) or Control Flow Graph (CFG) representation of the code.
+```python
 
     +
    / \
@@ -161,3 +176,5 @@ c = a
 
 
 
+
+```

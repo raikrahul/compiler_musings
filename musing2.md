@@ -1,4 +1,6 @@
 A dead variable
+
+
 def example():
     x = 5  # x is initialized
     x = x + 2  # x is modified
